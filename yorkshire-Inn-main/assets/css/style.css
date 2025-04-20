@@ -1,0 +1,219 @@
+body{
+    color: white;
+}
+
+.headercol{
+    text-align: center;
+    flex: 1;
+    font-size: 25px;
+}
+.footercol{
+    text-align: center;
+    flex: 1;
+    font-size: 25px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socials{
+    width: 150px;
+    height: auto;
+}
+
+#footerLogo{
+    height: auto;
+    width: 100%;
+}
+
+/* Booking.html CSS */
+.bookingList{
+    list-style-type: disc;
+}
+
+.bookingSelect{
+    background: #4A4C55;
+    padding-top: 75px;
+    padding-bottom: 25px;
+}
+
+#bookingRow{
+    background: #4A4C55;
+    margin-left: 4px;
+    padding-right: 0;
+    width: 100%;
+}
+
+.room{
+    background: #69686B;
+    margin-top: 20px;
+    display:inline-block;
+    width: 100%;
+}
+
+
+#bookingCol{
+    background: #69686B;
+    margin-left: 0;
+}
+
+.bookingButton{
+    background: #36353A;
+    border: 2px solid #FFFFFF;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contactUs{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: larger;
+}
+
+.cardIcon{
+    width: 25px;
+    height: auto;
+}
+
+/*CSS for payment.html */
+.resDetails{
+    text-align: center;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+#paymentWindow{
+    background: #69686B;
+}
+
+.amenPayment{
+    list-style-type: disc;
+}
+
+.payImg{
+    height: 300px;
+    width: auto;
+}
+
+#infoCol{
+    background: #36353A;
+}
+
+#infoRow{
+    margin: auto;
+    background: #36353A;
+    border: 2px solid #FFFFFF;
+    width: 98%;
+}
+
+.roomTotal{
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    background: #36353A;
+    border: 2px solid #FFFFFF;
+    align-self: center;
+    width: 20%;
+}
+
+.summary{
+    text-align: center;
+    background: #69686B;
+    margin: 20px;
+}
+
+table{
+    width: 100%;
+}
+
+.guestInfo{
+    background: #69686B;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+.terms{
+    text-align: center;
+    background: #69686B;
+    margin: 20px;
+    padding: 20px;
+}
+
+.submitPay{
+    background: #36353A;
+    border: 2px solid #FFFFFF;
+    border-radius: 22px;
+    color: white;
+    font-size: larger;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-left: 45%;
+}
+
+.submitPay label, .submitPay input{
+    display:flex;
+    flex-direction:column;
+  }
+
+#title{
+    width: 50%;
+}
+#request{
+    width: 100%;
+    height: 150px;
+}
+
+.paymentform{
+    display: inline-block;
+  }
+
+.formcol{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: left;
+    font-size: 22px;
+  }
+  .formcol1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: .5;
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .cardrow p{
+    margin:0;
+  }
+
+.resDetails ul{
+    padding:15px;
+}
+
+.buttonLink{
+    text-decoration: none;
+    color: white;
+}
+
+.confirmText{
+    text-align: center;
+}
+
+.concerns{
+    text-align: center;
+}
+
+.innMessage{
+    text-align: center;
+}

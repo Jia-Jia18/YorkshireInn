@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Booking</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link href='assets/css/homecss.css' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
+</head>
+
+<body>
+    <div class="header">
+        <div class='row'>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>Rooms</a>
+            </div>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>History</a>
+            </div>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>Reviews</a>
+            </div>
+            <div class='headercol'>
+                <a><img src='assets/img/yorkshire.png' alt='Yorkshire Inn Logo'></a>
+            </div>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>Fingerlakes</a>
+            </div>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>Policies</a>
+            </div>
+            <div class='headercol'>
+                <br>
+                <br>
+                <a>Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="grid-wrapper">
+        <div class='resDetails'>
+            <h2>Your Reservation Details</h2>
+            <div class='room'>
+                <div class='row'>
+                    <div class='col' id='paymentWindow'>
+                        <h3>Blue Room</h3>
+                        <ul class='amenPayment'>
+                            <li>Sleeps 2</li>
+                            <li>Bathrobes</li>
+                            <li>Hair Dryer</li>
+                            <li>Private Bathroom</li>
+                            <li>Shower</li>
+                            <li>Air Conditioning</li>
+                        </ul>
+                    </div>
+                    <div class='col' id='paymentWindow'>
+                        <ul class='amenPayment'>
+                            <li>TV</li>
+                            <li>Free WiFi</li>
+                            <li>Daily Housekeeping</li>
+                            <li>Desk</li>
+                            <li>Balcony</li>
+                        </ul>
+                    </div>
+                    <div class='col' id='paymentWindow'>
+                        <img src='assets/img/blue.jpg' alt='Blue Room Bed' class='payImg'>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='roomInfo'>
+                        <div class='row' id='infoRow'>
+                            <div class='col' id='infoCol'>
+                                <h3><strong>CHECK IN</strong></h3>
+                                <p>DATE HERE</p>
+                            </div>
+                            <div class='col' id='infoCol'>
+                                <h3><strong>CHECK OUT</strong></h3>
+                                <p>DATE HERE</p>
+                            </div>
+                            <div class='col' id='infoCol'>
+                                <h3><strong>NO. OF GUESTS</strong></h3>
+                                <p>2 Adults 0 Children</p>
+                            </div>
+                            <div class='col' id='infoCol'>
+                                <h3><strong>ROOM FARE</strong></h3>
+                                <p>$215.00/Night</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='roomTotal'>
+                        <h3><strong>FARE TOTAL</strong></h3>
+                        <p>TOTAL</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class='contactUs'>
+            <h2><strong>Have a question about booking with us?</strong></h2>
+            <button class='bookingButton'>Contact Us</button>
+        </div>
+
+        <div class='summary'>
+            <table>
+                <tr>
+                    <th>Charge Description</th>
+                    <th>Num. of Nights</th>
+                    <th>Cost</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Blue Room</td>
+                    <td>6</td>
+                    <td>$215.00</td>
+                    <td>$1,290.00</td>
+                </tr>
+                <tr>
+                    <td>Guest 1</td>
+                    <td>6</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>Guest 2</td>
+                    <td>6</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>NYS Sales Tax (8%)</td>
+                    <td>6</td>
+                    <td>$17.20</td>
+                    <td>$103.20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL DUE*</td>
+                    <td>$1,393.20</td>
+                </tr>
+            </table>
+        </div>
+        <h3 class='resDetails'>Guest Information</h3>
+        <div class='guestInfo'>
+            <form class="paymentform">
+                <div class="row">
+                    <div class="formcol1">
+                        <label for='title'>Title</label>
+                        <input type='text' id='title' name='title' value='Mr.'>
+                    </div>
+                    <div class="formcol">
+                        <label for='fname'>First Name*</label>
+                        <input type='text' id='fname' name='fname'>
+                    </div>
+
+                    <div class="formcol">
+                        <label for='lname'>Last Name*</label>
+                        <input type='text' id='lname' name='lname'><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="formcol">
+                        <label for='email'>E-mail Address*</label>
+                        <input type='text' id='email' name='email'>
+                    </div>
+
+                    <div class="formcol">
+                        <label for='pnum'>Phone Number*</label>
+                        <input type='text' id='pnum' name='pnum'><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="formcol">
+                        <label for='request'>Special Requests/Notes</label>
+                        <textarea id="request" name="request"
+                            placeholder="please use this field to communicate any special requests or notes for the Innkeeper (ex. dietary restrictions, pet guests)."></textarea>
+                    </div>
+                </div>
+                <br>
+                <h3>Payment Information</h3>
+
+                <div class="row">
+                    <div class="formcol">
+                        <label for='cardName'>Name on Card*</label>
+                        <input type='text' id='cardName' name='cardName'>
+                    </div>
+                    <div class="formcol">
+                        <div class="cardrow">
+                            <p>We accept these cards:</p>
+                            <div>
+                                <img src='assets/img/visa 1.png' class='cardIcon'>
+                                <img src='assets/img/american-express 1.png' class='cardIcon'>
+                                <img src='assets/img/discover 1.png' class='cardIcon'>
+                                <img src='assets/img/master-card 1.png' class='cardIcon'>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="formcol">
+                        <label for='cardNum'>Card Number</label>
+                        <input type='text' id='cardNum' name='cardNum'>
+                    </div>
+                    <div class="formcol">
+                        <label for='expDate'>Exp Date</label>
+                        <input type='text' id='expDate' name='expDate'>
+                    </div>
+                    <div class="formcol">
+                        <label for='csc'>CSC</label>
+                        <input type='text' id='csc' name='csc'>
+                    </div>
+                    <div class="formcol">
+                        <label for='zip'>Zip Code</label>
+                        <input type='text' id='zip' name='zip'>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class='terms'>
+            <h3>Terms and Conditions</h3>
+            <p>By pressing the “Submit” button, you acknowledge that you have
+                read The Yorkshire<br> Inn’s policies regarding guests,
+                cancellations, and “no shows”. Our policies can be<br> viewed
+                here. All cancellations must be handled by calling our
+                Innkeeper at <br>(315) 548-9765.<br><br>
+
+                Upon pressing the “Submit” button, a charge will be placed
+                with the credit card on file.<br> A 25% deposit will be charged
+                to secure the room for your stay. This deposit will be<br>
+                credited upon checking out. </p>
+            
+            <form method="POST" action="booking.php">
+               <button type="submit" name="submitPay" class="submitPay">Submit</button>
+            </form>
+
+            <!-- <button class='submitPay'>Submit</button> -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class='row'>
+            <div class='footercol'>
+                <p> Follow us on Social Media</p></br>
+                <img src='assets/img/yelp.jpg' alt='Yelp Logo'>
+                <img src='assets/img/insta.jpg' alt='Instagram Logo'>
+                <img src='assets/img/fb.jpg' alt='Facebook Logo'>
+            </div>
+            <div class='footercol'>
+                <img src='assets/img/yorkshire.jpg' alt='Yorkshire Inn Logo' style="width:50%;">
+            </div>
+            <div class='footercol'>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Rooms</a></li>
+                    <li><a>History</a></li>
+                    <li><a>Reviews</a></li>
+                    <li><a>Fingerlakes</a></li>
+                    <li><a>Policies</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='footercol'>
+                <p>COPYRIGHT © 2022 THE YORKSHIRE INN - ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

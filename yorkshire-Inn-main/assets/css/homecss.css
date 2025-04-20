@@ -1,0 +1,645 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  background-color: #4A4C55;
+  color: white;
+}
+
+/*Header & footer css*/
+
+.header {
+  background-color: #36353A;
+}
+
+.footer {
+  background-color: #36353A;
+  padding: 25px;
+}
+
+.headercol {
+  text-align: center;
+  flex: 1;
+  font-size: 25px;
+  margin: auto;
+}
+
+.footercol {
+  text-align: center;
+  flex: 1;
+  font-size: 25px;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.socials {
+  width: 150px;
+  height: auto;
+}
+
+#footerLogo {
+  height: auto;
+  width: 100%;
+}
+
+
+
+/*Page Css*/
+
+h2 {
+  font-size: 1.5em;
+  margin: 1em;
+  font-weight: bolder;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding: 100px;
+  max-width: 80%;
+  font-size: 20px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container img {
+  vertical-align: middle;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  /*fallback*/
+  background: rgba(0, 0, 0, 0.7);
+  /*lower opacity*/
+  color: #f1f1f1;
+  width: 50%;
+  height: 100%;
+  padding: 20% 50px;
+}
+
+/*Same as above but on the right of the image*/
+.container .right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  /*fallback*/
+  background: rgba(0, 0, 0, 0.7);
+  /*lower opacity*/
+  color: #f1f1f1;
+  width: 50%;
+  height: 100%;
+  padding: 20% 50px;
+}
+
+.explorebtn {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+/* styling for the check availability form*/
+.center {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(54, 53, 58, 0.98);
+  max-width: 100%;
+  margin: auto;
+  padding: 10px;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0px 100px;
+  font-size: 20px;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+  color: white;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+
+.formstack {
+  display: inline-block;
+}
+
+.formstack div {
+  margin: 20px;
+}
+
+.formstack input {
+  height: 40px;
+  width: 80%;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.formstack .indent {
+  margin-right: 35px;
+}
+
+#message {
+  height: 150px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.msg {
+  vertical-align: top;
+}
+
+.formstack button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  color: white;
+}
+
+.formstack a {
+  padding: 10px;
+
+}
+
+.emplog {
+  background-color: #69686B;
+  margin: auto;
+  margin-bottom: 80px;
+  padding: 20px;
+  font-size: 25px;
+  max-width: 600px;
+}
+
+
+/* Styling for grid */
+.grid-wrapper {
+  margin: auto;
+  text-align: center;
+  max-width: 100%;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  --bs-gutter-x: 0;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 20px;
+  font-size: 25px;
+  background-color: #69686B;
+  justify-content: center;
+}
+
+.col p {
+  padding: 20px;
+}
+
+.innercol {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 15px;
+  text-align: left;
+  font-size: 22px;
+}
+
+.textcontainer {
+  background-color: #69686B;
+  margin: 15px;
+  padding: 20px;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.googlemap {
+  margin: auto;
+  padding: 20px;
+}
+
+ul {
+  text-align: left;
+}
+
+.concerns {
+  text-align: center;
+}
+
+.numText{
+  text-align: center;
+}
+
+.confirmationNum{
+  text-align: center;
+}
+
+.policytitle {
+  text-align: left;
+}
+
+/*Styling for Admin Menu Buttons*/
+.adminbtns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding: 20px;
+  font-size: 25px;
+
+}
+
+.menu {
+  background: #36353A;
+  color: white;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu:hover {
+  background-color: white;
+  color: black;
+}
+
+.logout {
+  background: #36353A;
+  color: white;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  position: absolute;
+  width: fit-content;
+  padding: 10px;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+}
+
+.logout:hover {
+  background-color: white;
+  color: black;
+}
+
+/*Styling change pricing page*/
+.pricingform label {
+  display: inline-block;
+  width: 120px;
+}
+
+.pricingform input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.pricingform button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  color: white;
+}
+
+.pricingform div {
+  margin: 20px;
+}
+
+.pricingform #password {
+  width: 400px;
+}
+
+/*Styling for change password form*/
+.passwordform {
+  margin: 30px;
+}
+
+.passwordform label {
+  display: inline-block;
+  width: 150px;
+}
+
+.passwordform input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.passwordform button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  color: white;
+}
+
+.passwordform div {
+  margin: 20px;
+}
+
+/*Styling for delete booking*/
+
+.bookingsearch {
+  display: inline-block;
+}
+
+.bookingsearch div {
+  margin: 10px;
+}
+
+.bookingsearch input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  border-style: solid;
+  margin: 10px;
+}
+
+.bookingsearch button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  height: fit-content;
+  color: white;
+}
+
+.bookingtable {
+  background-color: #69686B;
+  margin: 20px;
+
+  padding: 20px;
+  font-size: 25px;
+}
+
+.deletebooking button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  margin: 20px;
+  color: white;
+}
+
+.deletebooking .deletebutton {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  width: 100px;
+  color: white;
+  text-decoration: none;
+  margin: 20px 0px 0px 0px;
+}
+
+button{
+  margin-bottom:1%;
+}
+
+table {
+  margin-bottom: 2%;
+}
+
+
+/*View Booking Styling*/
+.viewbooking button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  width: 100px;
+  color: white;
+}
+
+.view {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  width: 100px;
+  color: white;
+}
+
+.viewbooking a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Checkout styling*/
+.confirmnum {
+  display: inline-block;
+}
+
+.paymentbtn {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  color: white;
+  margin: 20px;
+}
+
+.formspacing {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  text-align: left;
+  font-size: 22px;
+  margin: 10px;
+}
+
+.formspacing1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: .5;
+  text-align: left;
+  font-size: 22px;
+}
+
+.bookingform {
+  display: inline-block;
+}
+
+.bookingform button {
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  width: 100px;
+  color: white;
+  margin: auto;
+}
+
+#SpecialReq {
+  width: 100%;
+  height: 150px;
+}
+
+.manualconfirm input[type=submit]{
+  background: #36353A;
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 35px;
+  width: 100px;
+  color: white;
+  margin: auto;
+}
+
+.submitPay{
+  background: #36353A;
+  border: 2px solid #FFFFFF;
+  border-radius: 22px;
+  color: white;
+  font-size: larger;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.submitPay label, .submitPay input{
+  display:flex;
+  flex-direction:column;
+}
+
+/*Attempt at making it responsive*/
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 10px;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .grid-wrapper {
+    max-width: 100%;
+  }
+
+  .center {
+    max-width: 100%;
+  }
+
+  .container .content {
+    width: 100%;
+    padding: 20px 50px;
+  }
+
+  .container .right {
+    width: 100%;
+    padding: 20px 50px;
+  }
+
+  .col {
+    flex: 100%;
+  }
+
+  .innercol {
+    flex: 100%;
+  }
+
+  .adminbtns {
+    flex-direction: column;
+  }
+
+  .menu {
+    height: fit-content;
+    width: 100%;
+  }
+}

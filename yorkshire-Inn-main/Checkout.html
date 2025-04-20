@@ -1,0 +1,153 @@
+<!--
+    YORKSHIRE INN REDESIGN
+    Purpose: html for the page that checks the user out for booking
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Check Out</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link href='assets/css/homecss.css' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='assets/css/style.css' type='text/css'>
+</head>
+
+<body>
+    <div class=header>
+        <div class="headercol">
+            <a><img src='assets/img/yorkshire.jpg' alt='Yorkshire Inn Logo' style="width:300px;"></a>
+        </div>
+        <div class="headercol">
+            <button class="logout" type="button">Logout</button>
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <h1>Employee Actions - Check Out Guest</h1>
+
+        <form id="checkout" class="confirmnum" action="/action_page.php">
+            <label for="confirmation">Confirmation Number:</label>
+            <input type="text" id="confirmation" name="confirmation">
+        </form>
+        <hr style="width: 98%; color: black;">
+        <div class="bookingtable">
+                <table style="width:100%">
+                    <tr>
+                        <th>Guest Last name</th>
+                        <th>Guest First name</th>
+                        <th>Check In</th>
+                        <th>Check Out</th>
+                    </tr>
+                    <tr>
+                        <td>Kruppenbacher</td>
+                        <td>Dalton</td>
+                        <td>2/15/2023</td>
+                        <td>2/25/2023</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div class='summary'>
+            <table>
+                <tr>
+                    <th>Charge Description</th>
+                    <th>Num. of Nights</th>
+                    <th>Cost</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Blue Room</td>
+                    <td>6</td>
+                    <td>$215.00</td>
+                    <td>$1,290.00</td>
+                </tr>
+                <tr>
+                    <td>Guest 1</td>
+                    <td>6</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>Guest 2</td>
+                    <td>6</td>
+                    <td>$0.00</td>
+                    <td>$0.00</td>
+                </tr>
+                <tr>
+                    <td>NYS Sales Tax (8%)</td>
+                    <td>6</td>
+                    <td>$17.20</td>
+                    <td>$103.20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>TOTAL DUE*</td>
+                    <td>$1,393.20</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class='guestInfo'>
+            <form id="checkout" class="paymentform">
+                <br>
+                <h3>Payment Information</h3>
+
+                <div class="row">
+                    <div class="formcol">
+                        <label for='cardName'>Name on Card*</label>
+                        <input type='text' id='cardName' name='cardName'>
+                    </div>
+                    <div class="formcol">
+                        <div class="cardrow">
+                            <p>We accept these cards:</p>
+                            <div>
+                                <img src='assets/img/visa 1.png' class='cardIcon'>
+                                <img src='assets/img/american-express 1.png' class='cardIcon'>
+                                <img src='assets/img/discover 1.png' class='cardIcon'>
+                                <img src='assets/img/master-card 1.png' class='cardIcon'>
+                            </div>
+                        </div><br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="formcol">
+                        <label for='cardNum'>Card Number</label>
+                        <input type='text' id='cardNum' name='cardNum'>
+                    </div>
+                    <div class="formcol">
+                        <label for='expDate'>Exp Date</label>
+                        <input type='text' id='expDate' name='expDate'>
+                    </div>
+                    <div class="formcol">
+                        <label for='csc'>CSC</label>
+                        <input type='text' id='csc' name='csc'>
+                    </div>
+                    <div class="formcol">
+                        <label for='zip'>Zip Code</label>
+                        <input type='text' id='zip' name='zip'>
+                    </div>
+                </div>
+                <button id="checkout" class = "paymentbtn">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class='row'>
+            <div class='footercol'>
+                <img src='assets/img/yorkshire.jpg' alt='Yorkshire Inn Logo' style="width:300px;">
+            </div>
+            <div class='row'>
+                <div class='footercol'>
+                    <p>COPYRIGHT © 2022 THE YORKSHIRE INN - ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
